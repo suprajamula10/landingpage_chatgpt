@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader"></div>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Section -->
+  <main>
+    <section id="home">
+      <div class="intro">
+        <img src="doodle.jpg" alt="Doodle of a person">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in finibus mauris. Integer placerat nisl sit amet massa faucibus, eget fermentum purus placerat.</p>
+        <button>Contact Me</button>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="card">
+        <h2>Education</h2>
+        <p>Dummy content for education card.</p>
+        <button>Show More</button>
+      </div>
+
+      <div class="card">
+        <h2>Experience</h2>
+        <p>Dummy content for experience card.</p>
+        <button>Show More</button>
+      </div>
+
+      <div class="card">
+        <h2>Projects</h2>
+        <p>Dummy content for projects card.</p>
+        <button>Show More</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 YourName</p>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const showMoreButtons = document.querySelectorAll('.show-more');
+    showMoreButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Your show more functionality here
+            console.log('Show more clicked');
+        });
+    });
+});
+
+  </script>
+</body>
+</html>
